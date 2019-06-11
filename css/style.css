@@ -7,8 +7,12 @@
   padding: 0;
   margin: 0;
 }
+@font-face {
+  font-family: judge_dreddimport;
+  src: url("judge_dredd.ttf");
+}
 body {
-  font-family: Righteous, monospace, Helvetica, Verdana, Geneva, sans-serif;
+  font-family: judge_dreddimport;
   font-size: 16px;
   color: white;
   max-width: 100%;
@@ -23,6 +27,7 @@ header {
 }
 nav ul {
   text-align: center;
+  position: relative;
 }
 nav ul li {
   display: inline-block;
@@ -30,8 +35,61 @@ nav ul li {
   padding: 20px;
   height: 2%;
 }
-nav ul li a {
-  padding: 20px;
+nav a {
+  display: block;
+  padding: 0 10px;
+  color: #fff;
+  text-decoration: none;
+}
+nav a:hover {
+  color: red;
+}
+nav ul {
+	padding: 0;
+  margin: 0;
+	list-style: none;
+	position: relative;
+	}
+
+nav ul li {
+	display:inline-block;
+	background-color: #1f1f1f;
+	}
+
+nav a {
+	display:block;
+	padding:0 10px;
+	color:#FFF;
+	font-size:20px;
+	line-height: 60px;
+	text-decoration:none;
+}
+
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+	display: none;
+	position: absolute;
+}
+
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}
+
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+/* Second, Third and more Tiers	*/
+nav ul ul ul li {
+	position: relative;
+	top:-60px;
+	left:170px;
 }
 .logo-1 {
   position: absolute;
