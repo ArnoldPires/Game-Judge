@@ -7,12 +7,8 @@
   padding: 0;
   margin: 0;
 }
-@font-face {
-  font-family: judge_dreddimport;
-  src: url("judge_dredd.ttf");
-}
 body {
-  font-family: judge_dreddimport, monospace, Helvetica, Verdana, Geneva, sans-serif;
+  font-family: 'Tangerine', serif;
   font-size: 16px;
   color: white;
   max-width: 100%;
