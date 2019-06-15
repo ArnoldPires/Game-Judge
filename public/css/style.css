@@ -36,9 +36,10 @@ nav a:hover {
 }
 nav ul {
 	padding: 0;
-  margin: 0;
+  margin: 10px;
 	list-style: none;
 	position: relative;
+  width: 100%;
 	}
 
 nav ul li {
@@ -99,7 +100,6 @@ li {
   url(../images/gw2.png);
   background-repeat: no-repeat;
   background-size: cover;
-  float: left;
   width: 100%;
   height: auto;
   }
