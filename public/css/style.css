@@ -9,179 +9,139 @@
 }
 body {
   font-family: Righteous, monospace, Helvetica, Verdana, Geneva, sans-serif;
-  font-size: 16px;
-  color: white;
+  font-size: 100%;
   max-width: 100%;
   width: 100%;
   margin: 0 auto;
+  padding: 0px;
 }
+/*Header*/
 header {
-  background-color: #1f1f1f;
+  background-color:#262d2d;
   color: white;
-  height: auto;
   width: 100%;
+  height: 137px;
 }
-nav ul {
+  header ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
   text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+header ul li {
   position: relative;
+  background-color:#262d2d;
+  text-align: center;
 }
-nav a {
-  display: block;
-  padding: 0 10px;
-  color: #fff;
+header ul li a {
+  padding: 5%;
+  font-size: 1.1em;
   text-decoration: none;
+  display: flex;
+  justify-content: evenly;
+  width: 170px;
 }
-nav a:hover {
+header ul li a:hover {
+  background-color: black;
   color: red;
+  transition: 0.5s;
 }
-nav ul {
-	padding: 0;
-  margin: 10px;
-	list-style: none;
-	position: relative;
+header ul li ul {
   width: 100%;
-	}
-
-nav ul li {
-	display:inline-block;
-	background-color: #1f1f1f;
-	}
-
-nav a {
-	display:block;
-	padding:0 10px;
-	color:#FFF;
-	font-size:20px;
-	line-height: 35px;
-	text-decoration:none;
-}
-
-
-/* Hide Dropdowns by Default */
-nav ul ul {
-	display: none;
-	position: absolute;
-}
-
-/* Display Dropdowns on Hover */
-nav ul li:hover > ul {
-	display:inherit;
-}
-
-/* Fisrt Tier Dropdown */
-nav ul ul li {
-	width:100px;
-	float:none;
-	display:list-item;
-	position: relative;
-}
-
-/* Second, Third and more Tiers	*/
-nav ul ul ul li {
-	position: relative;
-	top:-60px;
-	left:10px;
-}
-.logo-1 {
+  display: none;
   position: absolute;
 }
-.logo-1, .logo-2 {
-  height: 80px;
-  margin: 1%;
+header ul li:hover ul {
+  display: block;
 }
-li {
-  list-style-type: none;
+header a {
+  color: white;
+  text-align: center;
+}
+h1 {
+  padding-top: 1%;
+  color: #d1a254;
+}
+.menu-toggle i {
+  display: none;
+}
+.fa-chevron-down {
+  margin: 5px;
+  font-size: smaller;
+}
+ .h1-logo {
   padding: 5px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
+.h1-logo img {
+  height: 70px;
+}
+/*End of Header*/
+/*Body*/
 .background-image-1 {
   background: linear-gradient(
   #757474e0,
   #757474e0),
   url(../images/gw2.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   width: 100%;
   height: auto;
-  }
-  .name {
-    padding: 10px;
-  }
-.link, h1 {
-  color: white;
-  font-size: -webkit-xxx-large;
-  text-decoration: none;
-  text-align: center;
-}
-span {
-  font-size: x-large;
-}
-.categories {
-  background-color: #1f1f1fc2;
-  display: flex;
-  float: left;
-  margin: 30px;
-  width: 30%;
-  height: auto;
-  padding: 40px;
-}
-.game-categories, .movie-categories {
-  flex: auto;
-  text-align: center;
-}
-.line-1 {
-  border-bottom: 2px solid;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-a {
-  color: white;
-}
-a:hover {
-  color: red;
-}
-.background-image-2 {
-  background: linear-gradient(
-    #757474e0,
-    #757474e0),
-    url(../images/warframe.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    float: left;
-    width: 100%;
-    height: auto;
 }
 .latest-review {
-  background-color: #1f1f1fc2;
-  float: right;
-  margin: 30px;
-  width: 60%;
-  height: auto;
-  padding: 40px;
+  padding: 5%;
 }
-.lrh3s {
-  display: flex;
-  justify-content: space-evenly;
-}
-.lrh3s input {
-  width: 25rem;
-  height: 2rem;
-}
-
 .reviews {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.reviews div {
+  width: 25%;
+  display: flex;
   justify-content: space-evenly;
+  padding: 15px;
 }
-.reviews img {
-  width: 160px;
-}
-.bottom-center {
+h3 {
+  color: #d1a254;
   text-align: center;
-  padding-bottom: 30px;
+  font-size: -webkit-xxx-large;
 }
-footer {
-  background-color: #1f1f1f;
-  color: white;
-  height: auto;
-  width: 100%;
-  margin-top: 80px;
+.name-tag {
+  position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background: url(../images/mask-title.png) top repeat-x;
+    z-index: 5;
+}
+.reviews h2 {
+  font-size: 14px;
+    margin: 0;
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 2px rgba(0,0,0,.6);
+}
+/*End of Body*/
+/* Media Queries */
+@media only screen and (max-width: 568px) {
+  header ul {
+    width: 100%;
+  }
+  .h1-logo img {
+    height: 40px;
+  }
+  header {
+    height: 110px;
+  }
+  header ul li a {
+    padding: 6%;
+  }
 }
