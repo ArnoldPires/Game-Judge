@@ -12,23 +12,25 @@ body {
   font-size: 100%;
   max-width: 100%;
   width: 100%;
+  height: 100%;
   margin: 0 auto;
   padding: 0px;
+  display: table;
 }
 /*Header*/
 header {
   background-color:#262d2d;
   color: white;
   width: 100%;
-  height: 137px;
+  height: 90px;
+  text-transform: uppercase;
 }
-  header ul {
+header ul {
   margin: 0px;
-  padding: 0px;
+  padding: 1%;
   list-style: none;
   text-align: center;
   display: flex;
-  justify-content: space-evenly;
 }
 header ul li {
   position: relative;
@@ -45,7 +47,7 @@ header ul li a {
 }
 header ul li a:hover {
   background-color: black;
-  color: red;
+  color: #e00b0bc2;
   transition: 0.5s;
 }
 header ul li ul {
@@ -60,8 +62,8 @@ header a {
   color: white;
   text-align: center;
 }
-h1 {
-  padding-top: 1%;
+h1, .footer-logo {
+  padding-top: 5%;
   color: #d1a254;
 }
 .menu-toggle i {
@@ -71,48 +73,82 @@ h1 {
   margin: 5px;
   font-size: smaller;
 }
- .h1-logo {
-  padding: 5px;
+.logo {
+  padding: 1%;
   display: flex;
-  justify-content: center;
-  width: 100%;
+  float: left;
 }
-.h1-logo img {
-  height: 70px;
+.logo img {
+  height: 65px;
+}
+.logo a {
+  text-decoration: none;
 }
 /*End of Header*/
 /*Body*/
 .background-image-1 {
   background: linear-gradient(
-  #757474e0,
-  #757474e0),
-  url(../images/gw2.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 100%;
-  height: auto;
-}
-.latest-review {
-  padding: 5%;
-}
-.reviews {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-.reviews div {
-  width: 25%;
-  display: flex;
-  justify-content: space-evenly;
-  padding: 15px;
-}
-h3 {
-  color: #d1a254;
-  text-align: center;
-  font-size: -webkit-xxx-large;
-}
-.name-tag {
-  position: relative;
+    #757474e0,
+    #757474e0),
+    url(../images/gw2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+  }
+  .latest-review {
+    padding: 8%;
+    margin: 0px;
+  }
+  .reviews {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #00000082
+  }
+  .reviews div {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    position: relative;
+    transition: transform .2s;
+  }
+  .reviews div:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5);
+  }
+    .reviews span {
+    position: absolute;
+    color: white;
+    bottom: 25%;
+    font-size: 100%;
+    font-weight: bold;
+    background: linear-gradient(to bottom, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%);
+    visibility: hidden;
+    z-index: 5;
+  }
+    .reviews:hover span {
+    visibility: visible;
+    z-index: 1;
+  }
+  .reviews img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    overflow: hidden;
+    max-width: 250px;
+    max-height: 250px;
+    border: 10px solid #00000085;
+  }
+  h3 {
+    color: white;
+    text-align: center;
+    font-size: -webkit-xxx-large;
+  }
+  .name-tag {
+    position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -120,28 +156,54 @@ h3 {
     padding: 10px;
     background: url(../images/mask-title.png) top repeat-x;
     z-index: 5;
-}
-.reviews h2 {
-  font-size: 14px;
+  }
+  .reviews h2 {
+    font-size: 14px;
     margin: 0;
     font-weight: 400;
     text-align: center;
     color: #fff;
     text-shadow: 0 0 2px rgba(0,0,0,.6);
-}
-/*End of Body*/
-/* Media Queries */
-@media only screen and (max-width: 568px) {
-  header ul {
+  }
+  /*End of Body*/
+  /*Footer*/
+  .foot-wrap {
+    background-color: #262d2d;
+    color: white;
+    height: 1px;
     width: 100%;
+    display: table-row;
   }
-  .h1-logo img {
-    height: 40px;
+  .foot-content {
+    text-align: center;
   }
-  header {
-    height: 110px;
+  .foot-content .logo {
+    float: none;
+    display: inline-grid;
+    text-align: -webkit-center;
   }
-  header ul li a {
-    padding: 6%;
+  .social-media {
+    padding: 2%;
+    position: absolute;
+    left: 0%;
   }
-}
+  .social-media i {
+		font-size: 40px;
+    color: #d1a254;
+  }
+  /*End of Footer*/
+  /* Media Queries */
+  @media only screen and (max-width: 568px) {
+    header ul {
+      width: 100%;
+    }
+    .h1-logo img {
+      height: 40px;
+    }
+    header {
+      height: 110px;
+    }
+    header ul li a {
+      padding: 6%;
+    }
+  }
