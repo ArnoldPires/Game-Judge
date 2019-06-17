@@ -1,6 +1,6 @@
-const gameJudge = [
+const comments = [
 
-]
+];
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
@@ -8,7 +8,17 @@ const PORT = process.env.PORT || 3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/css', express.static('css'));
 app.use('/js', express.static('js'));
+app.use('/routes', express.static('js'));
 app.use(express.static('public'));
+let comment = require('./routes/comment.js');
+//Comment-Section
+app.get('/', (req, res) => {
+  res.render('review-page.ejs', { comment: comments });
+});
+app.post('/comment', (req, res) => {
+  comments.push(req.body.userComment);
+  res.redirect('/');
+});
 
 //mongoose setup
 const mongoose = require('mongoose');

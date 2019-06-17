@@ -8,4 +8,4 @@ var commentSchema = mongoose.Schema({
 });
 
 // Export the comment model to app.js
-module.exports = mongoose.public('Comment', commentSchema);
+module.exports = mongoose.routes('Comment', commentSchema);

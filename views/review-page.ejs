@@ -1,0 +1,60 @@
+<%- include partials/header.ejs %>
+<div class="review-wrapper">
+  <h1 class="review-title">Guild Wars 2 Review</h1>
+  <div class="review-iv">
+    <iframe src="https://www.youtube.com/embed/Ax-_06Acj8Y" frameborder="0" allow="" allowfullscreen></iframe>
+    <div class="review-info">
+      <p>Plateform: PC</p>
+      <p>Release Date: 2012</p>
+      <br>
+      <br>
+      <div class="pac">
+        <ul>
+          <p><span>PROS</span><p>
+            <li>Great Combat</li>
+            <li>Engaging Story</li>
+            <li>Very helpful Community</li>
+          </ul>
+          <ul>
+            <p>CONS<p>
+              <li>Some random Disconnects</li>
+              <li>Missing Living Story 1</li>
+              <li>Not enough PVP gamemodes</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="written-review">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="comment-section">
+        <div id="respond">
+          <h3>Leave a Comment</h3>
+          <form action="/comment" method="post" id="commentform">
+            <label for="comment_author" class="required">Your name</label>
+            <input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
+            <label for="email" class="required">Your email;</label>
+            <input type="email" name="email" id="email" value="" tabindex="2" required="required">
+            <label for="comment" class="required">Your message</label>
+            <textarea name="comment" id="comment" rows="10" tabindex="4"  required="required"></textarea>
+            <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID" />
+            <input name="submit" type="submit" value="Submit comment" />
+          </form>
+          <% for(let x = 0; x <comment.length; x++) { %>
+            <div class="card">
+              <div class="card-header">
+                Comment #<%= x + 1 %>
+              </div>
+              <div class="card-body">
+                <%= comment[x] %>
+              </div>
+            </div>
+            <% } %>
+          </div>
+        </div>
+      </div>
+      <%- include partials/footer.ejs %>
