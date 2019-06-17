@@ -166,6 +166,58 @@ h1, .footer-logo {
     text-shadow: 0 0 2px rgba(0,0,0,.6);
   }
   /*End of Body*/
+  /*Review-Page*/
+  .review-wrapper {
+    background: linear-gradient(
+      #757474e0,
+      #757474e0),
+      url(../images/gw2.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: fit-content;
+      display: block;
+  }
+  .review-title {
+    font-size: -webkit-xxx-large;
+    text-align: center;
+    padding-top: 15px;
+    color: white;
+  }
+  .review-iv {
+    display: flex;
+    justify-content: center;
+  }
+  iframe {
+    width: 50%;
+    height: 500px;
+    margin: 30px;
+    border: 10px solid black;
+  }
+  .review-info {
+    color: white;
+    margin-top: 25px;
+    padding: 10px;
+    font-size: xx-large;
+  }
+  .pac p {
+    font-weight: bold;
+    color: red;
+  }
+  .pac span {
+    color: blue;
+  }
+  .written-review {
+    background-color: #1c1c1c69;
+    color: white;
+    border: 10px solid black;
+    padding: 30px;
+    width: 75%;
+    margin: 0 auto;
+    font-size: x-large;
+    margin-bottom: 70px;
+  }
+  /*End of Review-Page*/
   /*Footer*/
   .foot-wrap {
     background-color: #262d2d;
