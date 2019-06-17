@@ -246,6 +246,17 @@ h1, .footer-logo {
   border-radius: 5px;
   line-height: 1.4em;
 }
+.card {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: white;
+}
+form {
+  margin-top:20px;
+}
+form textarea {
+  width: 100%;
+}
   /*End of Comment Section*/
   /*End of Review-Page*/
   /*Footer*/
