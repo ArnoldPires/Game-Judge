@@ -187,6 +187,8 @@ h1, .footer-logo {
   .review-iv {
     display: flex;
     justify-content: center;
+    width: 100%;
+    margin: 5px;
   }
   iframe {
     width: 50%;
