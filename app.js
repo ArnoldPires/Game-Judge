@@ -10,11 +10,15 @@ app.use('/css', express.static('css'));
 app.use('/js', express.static('js'));
 app.use('/routes', express.static('js'));
 app.use(express.static('public'));
-let comment = require('./routes/comment.js');
-//Comment-Section
+
 app.get('/', (req, res) => {
-  res.render('review-page.ejs', { comment: comments });
-});
+    res.render('index.ejs');
+  });
+
+//Comment-Section
+//app.get('/', (req, res) => {
+//  res.render('review-page.ejs', { comment: comments });
+//});
 app.post('/comment', (req, res) => {
   comments.push(req.body.userComment);
   res.redirect('/');
@@ -30,10 +34,9 @@ mongoose.connect(url, {useNewUrlParser: true})
 app.use(express.static('views'));
 app.set('view engine', 'ejs');
 
-app.get('/', (req, res) => {
-    res.render('index.ejs');
-  });
-
+//app.get('/review-page.ejs', function(req, res) {
+//  res.render('review-page');
+//})
 
 
 app.listen(PORT, () => {
