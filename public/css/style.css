@@ -219,6 +219,11 @@ h1, .footer-logo {
     font-size: x-large;
     margin-bottom: 70px;
   }
+  .score {
+    font-size: larger;
+    color: #d1a254;
+    font-weight: bold;
+  }
   /*Comment Section*/
   .comment-section {
     display: flex;

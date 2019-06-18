@@ -1,126 +1,110 @@
+<!--
+<%- include partials/header.ejs %>
+<%- include partials/navbar.ejs %>
+<%- include home-page.ejs %>
+<%- include review-page.ejs %>
+<%- include partials/footer.ejs %>
+-->
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="public/css/style.css">
+  <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Tangerine">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
   <title>Game Judge</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header>
-      <nav>
-        
-        <div class="name">
-          <h1>Game Judge</h1>
-        </div>
-        <ul>
-          <li><a class="link"href="#">Video Games</a>
-            <i class="fa fa-caret-down"></i>
-            <ul>
-                <li><a class="sub-link"href="#">Art</a>
-                <li><a class="sub-link"href="#">Art</a>
-                <li><a class="sub-link"href="#">Art</a>
-                <li><a class="sub-link"href="#">Art</a>
-                <li><a class="sub-link"href="#">Art</a>
-                <li><a class="sub-link"href="#">Art</a>
-            </ul>
-          </li>
-          <li><a class="link"href="#">Movies/TV Shows</a>
-            <i class="fa fa-caret-down"></i>
-            <ul>
-                <li><a class="sub-link"href="#">Art</a>
-                <li><a class="sub-link"href="#">Art</a>
-                <li><a class="sub-link"href="#">Art</a>
-                <li><a class="sub-link"href="#">Art</a>
-                <li><a class="sub-link"href="#">Art</a>
-                <li><a class="sub-link"href="#">Art</a>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-      </header>
-      <!--
-      <div class="background-image-1">
-      <div class="categories">
-        <div class="game-categories">
-          <Span>Game Categories</span>
-          <div class="line-1"></div>
-          <div>
-            <ul>
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Adventure</a></li>
-              <li><a href="#">MMORPG</a></li>
-              <li><a href="#">VR</a></li>
-              <li><a href="#">Survival</a></li>
-              <li><a href="#">Horror</a></li>
-              <li><a href="#">Plateformer</a></li>
-              <li><a href="#">RTS</a></li>
-              <li><a href="#">Racing</a></li>
-              <li><a href="#">Simulation</a></li>
-              <li><a href="#">Sports</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="line-2"></div>
-        <div class="movie-categories">
-          <Span>Movie Categories</span>
-          <div class="line-1"></div>
-          <ul>
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Horor</a></li>
-            <li><a href="#">Drama</a></li>
-            <li><a href="#">Fantasy</a></li>
-            <li><a href="#">Super Hero</a></li>
-            <li><a href="#">Documentry</a></li>
-            <li><a href="#">Children</a></li>
-            <li><a href="#">Romance</a></li>
-            <li><a href="#">Comedy</a></li>
-            <li><a href="#">Indie Flims</a></li>
-            <li><a href="#">Video Shorts</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="latest-review">
-        <div class="lrh3s">
-        <h3>Latest Review</h3>
-        <div class="search">
-          <form action="Arnoldreviews/search.php"/>
-          <input type="text" name="search" placeholder="Search"/>
-        </form>
-      </div>
-    </div>
-      <div class="line-1"></div>
-      <ul class="reviews">
-        <li><img src="images/judgedreddreview.jpg"><a href="review-template.html"></a></>Dredd 3D</li>
-        <li><img src="images/judgedreddreview.jpg"><a href="review-template.html"></a></>lord of the Rings Online</li>
-        <li><img src="images/judgedreddreview.jpg"><a href="review-template.html"></a></>Mad Max Fury Road</li>
-        <br>
-        <li><img src="images/judgedreddreview.jpg"><a href="review-template.html"></a></>Red Dead Redemption 2</li>
-        <li><img src="images/judgedreddreview.jpg"><a href="review-template.html"></a></>Marvel's Spiderman</li>
-        <li><img src="images/judgedreddreview.jpg"><a href="review-template.html"></a></>Super Smash Bros Ultimate</li>
-        <br>
-        <li><img src="images/judgedreddreview.jpg"><a href="review-template.html"></a></>The Division 2</li>
-        <li><img src="images/judgedreddreview.jpg"><a href="review-template.html"></a></>Warframe</li>
-        <li><img src="images/judgedreddreview.jpg"><a href="review-template.html"></a></>Metal Gear Solid 5</li
-      </ul>
-    </div>
+<header>
+  <div class="logo">
+    <img src="public/images/game-judge-icon.png"></>
+    <a href="index.html"><h1>Game Judge</h1></a>
+    <img src="public/images/game-judge-icon.png"></>
   </div>
-  <div class="background-image-2">
-  <footer>
-    <nav>
-      <ul class="social-media">
-        <li><a class="link"href="#"><img src="#"></img></a></li>
-        <li><a class="link"href="#"><img src="#"></img></a></li>
-        <li><a class="link"href="#"><img src="#"></img></a></li>
+  <div class="menu-toggle">
+    <i class="fa fa-bars"></i>
+  </div>
+  <ul>
+    <li>
+      <a href="#">
+        Video Games
+        <i class="fa fa-chevron-down"></i>
+      </a>
+      <ul>
+        <li><a href="/action-adventure">Action/Adventure</a></li>
+        <li><a href="#">MMORPG</a></li>
+        <li><a href="#">VR</a></li>
+        <li><a href="#">Survival</a></li>
+        <li><a href="#">Horror</a></li>
+        <li><a href="#">RTS</a></li>
+      </li>
+    </ul>
+    <li>
+      <a href="#">
+        Movies/TV shows
+        <i class="fa fa-chevron-down"></i>
+      </a>
+      <ul>
+        <li><a href="#">Action/Adventure</a></li>
+        <li><a href="#">Horror</a></li>
+        <li><a href="#">Drama</a></li>
+        <li><a href="#">Super Hero</a></li>
+        <li><a href="#">Children</a></li>
+        <li><a href="#">Comedy</a></li>
+        <li><a href="#">Indie Films</a></li>
       </ul>
-      <div class="bottom-center">
-        <img class="logo-2" src="images/game-judge-icon.png"></img>
+    </li>
+    <li><a href="#esports">Esports</a></li>
+    <li><a href="#nutrition">Nutrition</a></li>
+    <li><a href="#hardware">Hardware</a></li>
+  </ul>
+</header>
+  <div class="background-image-1">
+    <div class="latest-review">
+      <h3>Latest Reviews</h3>
+      <div class="reviews">
+        <div><a href="public/judge-dredd-review.html"><img src="public/images/dredd3d.jpg"></></a>
+          <span>Dredd 3D</span>
+        </div>
+        <div><a href="public/gw2-review.html"><img src="public/images/guildwars2review.jpg"></></a>
+        <span>Guild Wars 2</span>
+        </div>
+        <div><a href="public/mad-max-review.html"><img src="public/images/madmaxreview.jpg"></></a>
+          <span>Mad Max Fury Road</span>
+        </div>
+        <div><img src="public/images/metalgear.jpg"></><span>Metal Gear Solid 5</span></div>
         <br>
-        <h5>All Rights Reserved</h5>
+        <div><img src="public/images/reddead2review.jpg"></><span>Red Dead Redemption 2</span></div>
+        <div><img src="public/images/spidermanreview.jpg"></><span>Spider Man</span></div>
+        <div><img src="public/images/supersmash.jpg"></><span>Super Smash Bros. Ultimate</span></div>
+        <div><img src="public/images/thedivision2review.jpg"></><span>The Division 2</span></div>
+        <br>
+        <div><img src="public/images/warframereview.jpg"></><span>Warframe</span></div>
+        <div><img src="public/images/doomreview.jpg"></><span>Doom</span></div>
+        <div><img src="public/images/halloweenreview.jpg"></><span>Halloween</span></div>
+        <div><img src="public/images/lordoftheringsreview.jpg"></><span>Lord of the Rings Triogy</span></div>
+        <br>
+        <div><img src="public/images/quakechampionsreview.jpg"></><span>Quake Champions</span></div>
+        <div><img src="public/images/forhonorreview.jpg"></><span>For Honor</span></div>
+        <div><img src="public/images/kingdomcomereview.jpg"></><span>Kingdom Come Deliverance</span></div>
+      </div>
     </div>
+    </div>
+    <footer class="foot-wrap">
+      <div class="foot-content">
+        <div class="social-media">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+    			<a href="#"><i class="fab fa-twitter-square"></i></a>
+    			<a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="logo">
+          <img src="public/images/game-judge-icon.png">
+          &copy;2019 Arnaldo Pires, All rights reserved.
+        </div>
+      </div>
     </footer>
-  </div>
-  -->
-  </body>
-  <script src="js/main.js"></script>
-  </html>
+    </body>
+    <!--<script src="../../public/js/script.js"></script> -->
+    </html>
