@@ -1,3 +1,4 @@
+/*
 var mongoose = require( 'mongoose' );
 var Comment = mongoose.model( 'Comment' );
 
@@ -9,7 +10,6 @@ exports.index = function ( req, res ){
     });
   });
 };
-
 exports.create = function ( req, res ){
   new Comment({
     username : req.body.username,
@@ -19,3 +19,13 @@ exports.create = function ( req, res ){
     res.redirect( '/' );
   });
 };
+*/
+//Header
+function headerNav() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
