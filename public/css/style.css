@@ -99,29 +99,33 @@ header {
   z-index: 5;
 }
 nav {
-  display: flex;
   margin: 1%;
 }
 nav h1 {
   position: relative;
-  top: 10px;
-  text-decoration: none;
-  color: white;
+  top: 15px;
   font-size: xx-large;
 }
-header img {
+nav h1 a {
+  text-decoration: none;
+  color: #d1a254;
+}
+nav img {
   width: 5%;
   height: 75px;
   position: relative;
+  left: 0%;
+  top: 0%;
+  float: left;
 }
-header ul {
+nav ul {
   display: flex;
   justify-content: space-evenly;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0px;
 }
-header ul li {
+nav ul li {
   list-style-type: none;
   position: relative;
   padding: 10px 0px;
@@ -129,29 +133,29 @@ header ul li {
   box-sizing: border-box;
   border-radius: 1px solid
 }
-header ul li:hover {
+nav ul li:hover {
   background: red;
 }
 header ul li:last-child {
   border-right: none;
 }
-header ul li a {
+nav ul li a {
   text-decoration: none;
-  padding: 0 20px;
+  padding: .8rem 1rem;
   color: #fff;
+  line-height: 1
 }
-header ul li ul {
+nav ul li ul {
   position: absolute;
   background: #262d2d;
   top: 40px;
   left: 0;
   display: block;
   width: 200px;
-  transition: 0.5s;
   opacity: 0;
   visibility: hidden;
 }
-header ul li:hover ul {
+nav ul li:hover ul {
   opacity: 1;
   visibility: visible;
 }
@@ -383,9 +387,6 @@ form textarea {
       width: 100%;
       z-index: 1;
     }
-    nav {
-      display: flex;
-    }
     nav img {
       height: 75px;
       width: 15%;
@@ -400,8 +401,12 @@ form textarea {
     }
     header {
       height: 110px;
+      display: inline-table;
     }
     header ul li a {
       padding: 6%;
+    }
+    .logo {
+      display: flow-root;
     }
   }
