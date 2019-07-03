@@ -16,12 +16,13 @@ body {
   font-size: 100%;
   max-width: 100%;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   margin: 0 auto;
   padding: 0px;
   display: inline-grid;
 }
 /*Header*/
+/*
 header {
   background-color:#262d2d;
   color: white;
@@ -91,6 +92,73 @@ h1, .footer-logo {
 }
 /*
 /*End of Header*/
+header {
+  width: 100%;
+  background-color: #262d2d;
+  text-transform: uppercase;
+  z-index: 5;
+}
+nav {
+  margin: 1%;
+}
+nav h1 {
+  position: relative;
+  top: 15px;
+  font-size: xx-large;
+}
+nav h1 a {
+  text-decoration: none;
+  color: #d1a254;
+}
+nav img {
+  width: 5%;
+  height: 75px;
+  position: relative;
+  left: 0%;
+  top: 0%;
+  float: left;
+}
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px;
+}
+nav ul li {
+  list-style-type: none;
+  position: relative;
+  padding: 10px 0px;
+  transition: 0.5s;
+  box-sizing: border-box;
+  border-radius: 1px solid
+}
+nav ul li:hover {
+  background: red;
+}
+header ul li:last-child {
+  border-right: none;
+}
+nav ul li a {
+  text-decoration: none;
+  padding: .8rem 1rem;
+  color: #fff;
+  line-height: 1
+}
+nav ul li ul {
+  position: absolute;
+  background: #262d2d;
+  top: 40px;
+  left: 0;
+  display: block;
+  width: 200px;
+  opacity: 0;
+  visibility: hidden;
+}
+nav ul li:hover ul {
+  opacity: 1;
+  visibility: visible;
+}
 /*Body*/
 .background-image-1 {
   background: linear-gradient(
@@ -308,6 +376,22 @@ form textarea {
   }
   /*End of Footer*/
   /* Media Queries */
+  @media (max-width: 768px) {
+    header ul {
+      display: block;
+    }
+    header ul li {
+      display: block;
+    }
+    header ul li ul {
+      width: 100%;
+      z-index: 1;
+    }
+    nav img {
+      height: 75px;
+      width: 15%;
+    }
+  }
   @media only screen and (max-width: 568px) {
     header ul {
       width: 100%;
@@ -317,8 +401,12 @@ form textarea {
     }
     header {
       height: 110px;
+      display: inline-table;
     }
     header ul li a {
       padding: 6%;
+    }
+    .logo {
+      display: flow-root;
     }
   }
