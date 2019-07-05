@@ -17,85 +17,43 @@
   <title>Game Judge</title>
 </head>
 <body>
-<header>
-  <nav>
-    <!--
-    <div class="logo">
-      <img src="public/images/game-judge-icon.png"></>
-      <h1><a href="index.html">Game Judge</a></h1>
-    </div>
-    -->
-    <div class="logo">
-      <a href="index.html"><img src="public/images/game-judge-icon.png" alt="logo"></a>
-      <h1><a href="index.html">Game Judge</a></h1>
-    </div>
-    <ul>
-      <li><a href="#">video Games<i class="fa fa-chevron-down"></i></a>
-        <ul>
-          <li><a href="#">Action/Adventure</a></li>
-          <li><a href="#">MMORPG</a></li>
-          <li><a href="#">VR</a></li>
-          <li><a href="#">Survival</a></li>
-          <li><a href="#">Horror</a></li>
-          <li><a href="#">RTS</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Movies/TV shows<i class="fa fa-chevron-down"></i></a>
-        <ul>
-          <li><a href="#">Action/Adventure</a></li>
-          <li><a href="#">Horror</a></li>
-          <li><a href="#">Drama</a></li>
-          <li><a href="#">Super Hero</a></li>
-          <li><a href="#">Children</a></li>
-          <li><a href="#">Comed</a></li>
-          <li><a href="#">Indie Films</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Esports</a></li>
-    </ul>
-  </nav>
-<!--  <nav>
-  <div class="logo">
+  <header>
     <img src="public/images/game-judge-icon.png"></>
-    <a href="index.html"><h1>Game Judge</h1></a>
-    <img src="public/images/game-judge-icon.png"></>
-  </div>
-  <div class="menu-toggle">
-    <i class="fa fa-bars"></i>
-  </div>
-  <ul>
-    <li>
-      <a href="#">Video Games<i class="fa fa-chevron-down"></i></a>
+    <div class="logo">
+    <h1>Game Judge</h1>
+    </div>
+    <nav>
       <ul>
-        <li><a href="/action-adventure">Action/Adventure</a></li>
-        <li><a href="#">MMORPG</a></li>
-        <li><a href="#">VR</a></li>
-        <li><a href="#">Survival</a></li>
-        <li><a href="#">Horror</a></li>
-        <li><a href="#">RTS</a></li>
-        </ul>
-      </li>
-    </ul>
-    <li>
-      <a href="#">Movies/TV shows<i class="fa fa-chevron-down"></i></a>
-      <ul>
-        <li><a href="#">Action/Adventure</a></li>
-        <li><a href="#">Horror</a></li>
-        <li><a href="#">Drama</a></li>
-        <li><a href="#">Super Hero</a></li>
-        <li><a href="#">Children</a></li>
-        <li><a href="#">Comedy</a></li>
-        <li><a href="#">Indie Films</a></li>
+        <li class="sub-menu"><a href="#">Video Games<i class="fa fa-chevron-down"></i></a>
+          <ul>
+            <li><a href="#">Action/Adventure</a></li>
+            <li><a href="#">MMORPG</a></li>
+            <li><a href="#">VR</a></li>
+            <li><a href="#">Survival</a></li>
+            <li><a href="#">Horror</a></li>
+            <li><a href="#">RTS</a></li>
+          </ul>
+        </li>
+        <li class="sub-menu"><a href="#">Movies/Tv Shows<i class="fa fa-chevron-down"></i></a>
+          <ul>
+            <li><a href="#">Action/Adventure</a></li>
+            <li><a href="#">Horror</a></li>
+            <li><a href="#">Drama</a></li>
+            <li><a href="#">Super Hero</a></li>
+            <li><a href="#">Children</a></li>
+            <li><a href="#">Comedy</a></li>
+            <li><a href="#">Indie Films</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Esports</a></li>
       </ul>
-    </li>
-    <li><a href="#esports">Esports</a></li>
-    <li><a href="#nutrition">Nutrition</a></li>
-    <li><a href="#hardware">Hardware</a></li>
-  </nav>
-  -->
-</header>
-  <div class="background-image-1">
-    <div class="latest-review">
+    </nav>
+    <div class="menu-toggle">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+  </header>
+  <section class="review-section">
+    <div class="background-img">
       <h3>Latest Reviews</h3>
       <div class="reviews">
         <div><a href="public/judge-dredd-review.html"><img src="public/images/dredd3d.jpg"></></a>
@@ -124,20 +82,21 @@
         <div><img src="public/images/kingdomcomereview.jpg"></><span>Kingdom Come Deliverance</span></div>
       </div>
     </div>
-    </div>
-    <footer class="foot-wrap">
+  </section>
+  <footer class="foot-wrap">
       <div class="foot-content">
         <div class="social-media">
           <a href="#"><i class="fab fa-instagram"></i></a>
     			<a href="#"><i class="fab fa-twitter-square"></i></a>
     			<a href="#"><i class="fab fa-youtube"></i></a>
         </div>
-        <div class="logo">
+        <div class="footer-logo">
           <img src="public/images/game-judge-icon.png">
           &copy;2019 Arnaldo Pires, All rights reserved.
         </div>
       </div>
     </footer>
-    </body>
-    <!--<script src="../../public/js/script.js"></script> -->
-    </html>
+</body>
+ <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+ <script src="public/js/index.js"></script>
+</html>

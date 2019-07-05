@@ -7,160 +7,92 @@
   padding: 0;
   margin: 0;
 }
-html, body {
-  overflow: auto!important;
-  max-height: 100% !important;
-}
 body {
+  margin: 0;
+  padding: 0;
   font-family: Righteous, monospace, Helvetica, Verdana, Geneva, sans-serif;
   font-size: 100%;
-  max-width: 100%;
-  width: 100%;
-  height: 100vh;
-  margin: 0 auto;
-  padding: 0px;
-  display: inline-grid;
 }
 /*Header*/
-/*
 header {
-  background-color:#262d2d;
-  color: white;
+  height: 60px;
+  padding: 0 100px;
   width: 100%;
-  height: 90px;
-  text-transform: uppercase;
-}
-header ul {
-  margin: 0px;
-  padding: 1%;
-  list-style: none;
-  text-align: center;
-  display: flex;
-}
-header ul li {
-  position: relative;
-  background-color:#262d2d;
-  text-align: center;
-  z-index: 1;
-}
-header ul li a {
-  padding: 5%;
-  font-size: 1.1em;
-  text-decoration: none;
-  display: flex;
-  justify-content: evenly;
-  width: 170px;
-}
-header ul li a:hover {
-  background-color: black;
-  color: #e00b0bc2;
-  transition: .2s;
-}
-header ul li ul {
-  width: 100%;
-  display: none;
-  position: absolute;
-}
-header ul li:hover ul {
-  display: block;
-}
-header a {
-  color: white;
-  text-align: center;
-}
-h1, .footer-logo {
-  padding-top: 5%;
-  color: #d1a254;
-}
-.menu-toggle i {
-  display: none;
-}
-.fa-chevron-down {
-  margin: 5px;
-  font-size: smaller;
-}
-.logo {
-  padding: 1%;
-  display: flex;
-  float: left;
-}
-.logo img {
-  height: 65px;
-}
-.logo a {
-  text-decoration: none;
-}
-/*
-/*End of Header*/
-header {
-  width: 100%;
+  box-sizing: border-box;
   background-color: #262d2d;
   text-transform: uppercase;
+  position: relative;
   z-index: 5;
 }
-nav {
-  margin: 1%;
-}
-nav h1 {
-  position: relative;
-  top: 15px;
-  font-size: xx-large;
-}
-nav h1 a {
-  text-decoration: none;
+header .logo {
   color: #d1a254;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  float: left;
+  font-weight: bold;
 }
-nav img {
-  width: 5%;
-  height: 75px;
-  position: relative;
-  left: 0%;
-  top: 0%;
+header img {
+  height: 55px;
   float: left;
 }
-nav ul {
+header nav {
+  float: right;
+}
+header nav ul {
+  margin: 0;
+  padding: 0;
   display: flex;
-  justify-content: space-evenly;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0px;
 }
-nav ul li {
-  list-style-type: none;
+header nav ul li {
+  list-style: none;
   position: relative;
-  padding: 10px 0px;
-  transition: 0.5s;
-  box-sizing: border-box;
-  border-radius: 1px solid
 }
-nav ul li:hover {
-  background: red;
-}
-header ul li:last-child {
-  border-right: none;
-}
-nav ul li a {
-  text-decoration: none;
-  padding: .8rem 1rem;
-  color: #fff;
-  line-height: 1
-}
-nav ul li ul {
+header nav ul li.sub-menu:before {
   position: absolute;
-  background: #262d2d;
-  top: 40px;
+  line-height: 50px;
+  color: #fff;
+  right: 1px;
+}
+header nav ul li ul {
+  position: absolute;
   left: 0;
+  background-color: #333;
+  display: none;
+}
+header nav ul li.active ul {
+  display: block;
+}
+header nav ul li ul li {
   display: block;
   width: 200px;
-  opacity: 0;
-  visibility: hidden;
 }
-nav ul li:hover ul {
-  opacity: 1;
-  visibility: visible;
+header nav ul li a {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  color: #fff;
+  text-decoration: none;
+  display: block;
 }
-/*Body*/
-.background-image-1 {
+header nav ul li a:hover {
+  color: #fff;
+  background-color: #7c0001;
+}
+header nav ul li a:active {
+  background: #7c0001;
+}
+.menu-toggle {
+  color: #fff;
+  float: right;
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+/*End of Header*/
+/*Latest Review*/
+.background-img {
   background: linear-gradient(
     #757474e0,
     #757474e0),
@@ -169,16 +101,16 @@ nav ul li:hover ul {
     background-size: cover;
     width: 100%;
     height: auto;
-  }
-  .latest-review {
-    padding: 8%;
-    margin: 0px;
-  }
-  .reviews {
+    padding: 10%;
+}
+.review-section {
+  color: white;
+}
+.reviews {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    background-color: #00000082
+    background-color: #00000082;
   }
   .reviews div {
     width: 20%;
@@ -189,9 +121,9 @@ nav ul li:hover ul {
     transition: transform .2s;
   }
   .reviews div:hover {
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.5);
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
   }
     .reviews span {
     position: absolute;
@@ -207,7 +139,7 @@ nav ul li:hover ul {
     visibility: visible;
     z-index: 1;
   }
-  .reviews img {
+  .reviews  img {
     height: 100%;
     width: 100%;
     object-fit: fill;
@@ -248,165 +180,71 @@ nav ul li:hover ul {
     color: #fff;
     text-shadow: 0 0 2px rgba(0,0,0,.6);
   }
-  /*End of Body*/
-  /*Review-Page*/
-  .review-wrapper {
-    background: linear-gradient(
-      #757474e0,
-      #757474e0),
-      url(../images/gw2.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 100%;
-      height: fit-content;
-      display: block;
-  }
-  .review-title {
-    font-size: -webkit-xxx-large;
-    text-align: center;
-    padding-top: 15px;
-    color: white;
-  }
-  .review-iv {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 5px;
-  }
-  iframe {
-    width: 50%;
-    height: 500px;
-    margin: 30px;
-    border: 10px solid black;
-  }
-  .review-info {
-    color: white;
-    margin-top: 25px;
-    padding: 10px;
-    font-size: xx-large;
-  }
-  .pac p {
-    font-weight: bold;
-    color: red;
-  }
-  .pac span {
-    color: blue;
-  }
-  .written-review {
-    background-color: #1c1c1c69;
-    color: white;
-    border: 10px solid black;
-    padding: 30px;
-    width: 75%;
-    margin: 0 auto;
-    font-size: x-large;
-    margin-bottom: 70px;
-  }
-  .score {
-    font-size: larger;
-    color: #d1a254;
-    font-weight: bold;
-  }
-  /*Comment Section*/
-  .comment-section {
-    display: flex;
-    justify-content: center;
-  }
-  #respond {
-    background-color: #3b3b3b;
-    padding: 50px;
-    margin: 10px;
-    width: 65%;
-  }
-  label {
-    color: white;
-  }
-#respond input[type='text'],
-#respond input[type='email'],
-#respond textarea {
-  margin-bottom: 10px;
-  display: block;
-  width: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  border-radius: 5px;
-  line-height: 1.4em;
-}
-.card {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  color: white;
-}
-form {
-  margin-top:20px;
-}
-form textarea {
-  width: 100%;
-}
-  /*End of Comment Section*/
-  /*End of Review-Page*/
-  /*Footer*/
-  .foot-wrap {
+/*end of latest Review*/
+/*footer*/
+.foot-wrap {
     background-color: #262d2d;
     color: white;
-    height: 1px;
+    height: auto;
     width: 100%;
-    display: inline-table;
+    position: relative;
   }
   .foot-content {
     text-align: center;
   }
-  .foot-content .logo {
+  .foot-content .footer-logo {
     float: none;
-    display: inline-grid;
+    display: grid;
     text-align: -webkit-center;
+    width: 100%;
+  }
+  .foot-content img {
+    height: 55px;
+    display: block;
   }
   .social-media {
-    padding: 2%;
-    position: absolute;
-    left: 0%;
+    padding: 10px;
   }
   .social-media i {
 		font-size: 40px;
     color: #d1a254;
   }
-  /*End of Footer*/
-  /* Media Queries */
-  @media (max-width: 768px) {
-    header ul {
-      display: block;
-    }
-    header ul li {
-      display: block;
-    }
-    header ul li ul {
-      width: 100%;
-      z-index: 1;
-    }
-    nav img {
-      height: 75px;
-      width: 15%;
-    }
+/*End of footer*/
+/*media queries*/
+@media (max-width: 860px) {
+  header {
+    padding: 0 20px;
   }
-  @media only screen and (max-width: 568px) {
-    header ul {
-      width: 100%;
-    }
-    .h1-logo img {
-      height: 40px;
-    }
-    header {
-      height: 110px;
-      display: inline-table;
-    }
-    header ul li a {
-      padding: 6%;
-    }
-    .logo {
-      display: flow-root;
-    }
+  .menu-toggle {
+    display: block;
   }
+  header nav {
+    position: absolute;
+    top: 55px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 50px);
+    background: #333;
+    transition: 0.5s;
+  }
+  header nav.active {
+    left: 0;
+  }
+  header nav ul {
+    display: block;
+    text-align: center;
+  }
+  header nav ul li a {
+    border-bottom: 0.9px solid rgba(0, 0, 0, .2);
+  }
+  header nav ul li.active ul {
+    position: relative;
+    background: black;
+  }
+  header nav ul li ul li {
+    width: 100%;
+  }
+  h1 {
+    font-size: xx-large;
+  }
+}
