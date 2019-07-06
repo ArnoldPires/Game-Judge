@@ -129,7 +129,7 @@ header nav ul li a:active {
     position: absolute;
     color: white;
     bottom: 25%;
-    font-size: 100%;
+    font-size: 90%;
     font-weight: bold;
     background: linear-gradient(to bottom, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%);
     visibility: hidden;
@@ -182,33 +182,22 @@ header nav ul li a:active {
   }
 /*end of latest Review*/
 /*footer*/
-.foot-wrap {
-    background-color: #262d2d;
-    color: white;
-    height: auto;
-    width: 100%;
-    position: relative;
-  }
-  .foot-content {
-    text-align: center;
-  }
-  .foot-content .footer-logo {
-    float: none;
-    display: grid;
-    text-align: -webkit-center;
-    width: 100%;
-  }
-  .foot-content img {
-    height: 55px;
-    display: block;
-  }
-  .social-media {
-    padding: 10px;
-  }
-  .social-media i {
-		font-size: 40px;
-    color: #d1a254;
-  }
+footer {
+  background-color: #262d2d;
+  width: 100%;
+  color: white;
+}
+footer img {
+  height: 55px;
+}
+.footer-logo {
+  text-align: center;
+  padding: 10px;
+}
+.footer-logo i {
+  font-size: 40px;
+  color: #d1a254;
+}
 /*End of footer*/
 /*media queries*/
 @media (max-width: 860px) {
@@ -247,4 +236,15 @@ header nav ul li a:active {
   h1 {
     font-size: xx-large;
   }
+  h3 {
+    font-size: xx-large;
+  }
+  .reviews div {
+    width: 33%;
+  }
 }
+@media (max-width: 600px) {
+    .reviews div {
+      width: 50%;
+    }
+  }
