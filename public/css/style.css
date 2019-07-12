@@ -93,15 +93,13 @@ header nav ul li a:active {
 /*End of Header*/
 /*Latest Review*/
 .background-img {
-  background: linear-gradient(
-    #757474e0,
-    #757474e0),
+  background: linear-gradient(#757474e0,#757474e0),
     url(../images/gw2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     width: 100%;
     height: auto;
-    padding: 10%;
+    padding: 4%;
+    background-position: top;
 }
 .review-section {
   color: white;
@@ -182,10 +180,11 @@ header nav ul li a:active {
   }
 /*end of latest Review*/
 /*Individual review*/
-.review-wrapper {
+.wrapper {
   color: white;
   background-color: #00000082;
   padding: 1%;
+  margin-bottom: 20px;
 }
 .review-title {
   text-align: center;
@@ -230,8 +229,14 @@ iframe {
   max-width: 760px;
   margin: 30px auto;
 }
-
-
+strong {
+  color: #d1a254;
+  text-decoration: underline;
+  font-size: x-large;
+}
+p {
+  padding: 10px;
+}
 /*End of Comment Section*/
 /*footer*/
 footer {

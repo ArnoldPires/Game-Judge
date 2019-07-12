@@ -46,7 +46,7 @@
     </div>
   </header>
   <div class="background-img">
-    <div class="review-wrapper">
+    <div class="wrapper">
       <h1 class="review-title">Judge Dredd 3D Review</h1>
       <div class="review-iv">
         <iframe src="https://www.youtube.com/embed/TTsSsAakHjk" frameborder="0" allow="" allowfullscreen></iframe>
@@ -80,42 +80,34 @@
             <br>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
-          <div class="comment-section">
-            <h3>Leave a comment below!</h3>
-            <form id="commentform" class="comment-form">
+        </div>
+        <div class="wrapper">
+        <div class="comment-section">
+          <h3>Leave a comment below!</h3>
+          <div id="commentTimeStamp"></div>
+          <form id="commentform" class="comment-form">
             <input id="username" type="text" placeholder="Display Name"></input>
             <br>
             <textarea id="comment" placeholder="Comment here..."></textarea>
             <br>
             <button type="button" id="btn" onclick="post()">Submit</button>
-            </form>
-            <div id="commentTimeStamp"></div>
-              <!--    <% for(let x = 0; x <comment.length; x++) { %>
-              <div class="card">
-              <div class="card-header">
-              Comment #<%= x + 1 %>
-            </div>
-            <div class="card-body">
-            <%= comment[x] %>
-          </div>
+          </form>
         </div>
-        <% } %> -->
       </div>
     </div>
-  </div>
-</div>
-<footer>
-  <div class="footer-logo">
-    <img src="images/game-judge-icon.png">
-    <br>
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#"><i class="fab fa-twitter-square"></i></a>
-    <a href="#"><i class="fab fa-youtube"></i></a>
-    <p>&copy;2019 Arnaldo Pires, All rights reserved.</p>
-  </div>
-</footer>
-</body>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="js/index.js"></script>
-<script src="js/comment-section.js"></script>
-</html>
+    </div>
+    <footer>
+      <div class="footer-logo">
+        <img src="images/game-judge-icon.png">
+        <br>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter-square"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <p>&copy;2019 Arnaldo Pires, All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/comment-section.js"></script>
+  </html>
