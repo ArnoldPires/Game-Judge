@@ -25,12 +25,17 @@ header {
   z-index: 5;
 }
 header .logo {
-  color: #d1a254;
   height: 50px;
   line-height: 50px;
   font-size: 24px;
   float: left;
   font-weight: bold;
+}
+header h1 {
+  color: #d1a254;
+}
+header a {
+  text-decoration: none;
 }
 header img {
   height: 55px;
@@ -95,7 +100,8 @@ header nav ul li a:active {
 .background-img {
   background: linear-gradient(#757474e0,#757474e0),
     url(../images/gw2.png);
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
     height: auto;
     padding: 4%;
@@ -236,6 +242,23 @@ strong {
 }
 p {
   padding: 10px;
+}
+input, textarea {
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+}
+input {
+  height: 40px;
+}
+textarea {
+  height: 130px;
+  width: 100%;
+}
+button {
+  border-radius: 10px;
+  height: 40px;
+  width: 90px;
 }
 /*End of Comment Section*/
 /*footer*/
