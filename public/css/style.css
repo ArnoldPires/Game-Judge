@@ -99,91 +99,91 @@ header nav ul li a:active {
 /*Latest Review*/
 .background-img {
   background: linear-gradient(#757474e0,#757474e0),
-    url(../images/gw2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: auto;
-    padding: 4%;
-    background-position: top;
+  url(../images/gw2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  padding: 4%;
+  background-position: top;
 }
 .review-section {
   color: white;
 }
 .reviews {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    background-color: #00000082;
-  }
-  .reviews div {
-    width: 20%;
-    display: flex;
-    justify-content: center;
-    padding: 1%;
-    position: relative;
-    transition: transform .2s;
-  }
-  .reviews div:hover {
-    -ms-transform: scale(1.2); /* IE 9 */
-    -webkit-transform: scale(1.2); /* Safari 3-8 */
-    transform: scale(1.2);
-  }
-    .reviews span {
-    position: absolute;
-    color: white;
-    bottom: 25%;
-    font-size: 90%;
-    font-weight: bold;
-    background: linear-gradient(to bottom, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%);
-    visibility: hidden;
-    z-index: 5;
-  }
-    .reviews:hover span {
-    visibility: visible;
-    z-index: 1;
-  }
-  .reviews  img {
-    height: 100%;
-    width: 100%;
-    object-fit: fill;
-    overflow: hidden;
-    max-width: 250px;
-    max-height: 250px;
-    border: 10px solid #00000085;
-  }
-  .reviews img:hover {
-    -webkit-filter: brightness(60%);
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-  }
-  h3 {
-    color: white;
-    text-align: center;
-    font-size: -webkit-xxx-large;
-    padding-bottom: 3%;
-  }
-  .name-tag {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    padding: 10px;
-    background: url(../images/mask-title.png) top repeat-x;
-    z-index: 5;
-  }
-  .reviews h2 {
-    font-size: 14px;
-    margin: 0;
-    font-weight: 400;
-    text-align: center;
-    color: #fff;
-    text-shadow: 0 0 2px rgba(0,0,0,.6);
-  }
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: #00000082;
+}
+.reviews div {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+  position: relative;
+  transition: transform .2s;
+}
+.reviews div:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+.reviews span {
+  position: absolute;
+  color: white;
+  bottom: 25%;
+  font-size: 90%;
+  font-weight: bold;
+  background: linear-gradient(to bottom, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%);
+  visibility: hidden;
+  z-index: 5;
+}
+.reviews:hover span {
+  visibility: visible;
+  z-index: 1;
+}
+.reviews  img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  overflow: hidden;
+  max-width: 250px;
+  max-height: 250px;
+  border: 10px solid #00000085;
+}
+.reviews img:hover {
+  -webkit-filter: brightness(60%);
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+h3 {
+  color: white;
+  text-align: center;
+  font-size: -webkit-xxx-large;
+  padding-bottom: 3%;
+}
+.name-tag {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  background: url(../images/mask-title.png) top repeat-x;
+  z-index: 5;
+}
+.reviews h2 {
+  font-size: 14px;
+  margin: 0;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 2px rgba(0,0,0,.6);
+}
 /*end of latest Review*/
 /*Individual review*/
 .wrapper {
@@ -203,7 +203,7 @@ header nav ul li a:active {
 }
 iframe {
   width: 100%;
-  height: -webkit-fill-available;
+  height: 720px;
 }
 .review-info, .pac {
   font-size: x-large;
@@ -284,7 +284,7 @@ footer img {
 }
 /*End of footer*/
 /*media queries*/
-@media (max-width: 860px) {
+@media (max-width: 975px) {
   header {
     padding: 0 20px;
   }
@@ -326,34 +326,40 @@ footer img {
   .reviews div {
     width: 33%;
   }
+  .pac {
+    font-size: medium
+  }
 }
 @media (max-width: 600px) {
   .background-img {
     padding: 5%;
   }
-    .reviews div {
-      width: 50%;
-    }
-    .reviews img {
-      height: 250px;
-      border: 5px solid #00000085;
-    }
-    .review-title {
-      font-size: x-large;
-    }
-    .review-iv {
-      display: block;
-      padding: 5px;
-    }
-    iframe {
-      width: 100%;
-      height: 300px;
-    }
-    .review-info, .pac {
-      display: block;
-      font-size: medium
-    }
-    .score {
-      font-size: larger;
-    }
+  .reviews div {
+    width: 50%;
   }
+  .reviews img {
+    height: 250px;
+    border: 5px solid #00000085;
+  }
+  .review-title {
+    font-size: x-large;
+  }
+  .review-iv {
+    display: block;
+    padding: 5px;
+  }
+  iframe {
+    width: 100%;
+    height: 300px;
+  }
+  .review-info, .pac {
+    display: block;
+    font-size: medium
+  }
+  .score {
+    font-size: larger;
+  }
+  .pac ul {
+    text-align: center;
+  }
+}
